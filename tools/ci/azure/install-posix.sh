@@ -15,7 +15,7 @@ else
 fi
 
 python -m pip install --upgrade pip setuptools wheel
-python -m pip install cython pytest pytest-xdist coverage pytest-cov ipython jupyter notebook nbconvert isort flake8 nbconvert==5.6.1 coveralls
+python -m pip install cython pytest coverage pytest-cov ipython jupyter notebook nbconvert isort flake8 nbconvert==5.6.1 coveralls
 
 if [[ -n ${NUMPY} ]]; then CMD="$CMD~=${NUMPY}"; fi;
 CMD="$CMD scipy"
